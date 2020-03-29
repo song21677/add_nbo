@@ -16,8 +16,7 @@ int main(int argc, char* argv[]) {
 		return -1;
 	}
 
-	FILE* fp1;
-	FILE* fp2;
+	FILE *fp1, *fp2;
 	uint32_t buffer1, buffer2;
 
 	fp1 = fopen(argv[1], "rb");
