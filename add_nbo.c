@@ -27,7 +27,9 @@ int main(int argc, char* argv[]) {
 	}
     	fread(&buffer1, 4, 1, fp1);
     	fread(&buffer2, 4, 1, fp2);
-	
+	fclose(fp1);
+	fclose(fp2);
+
     	buffer1 = my_ntohl(buffer1);
     	buffer2 = my_ntohl(buffer2);
 
