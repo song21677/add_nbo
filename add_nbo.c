@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-void usuage() {
+void usage() {
     printf("syntax : add_nbo <file1> <file2>");
     printf("sample : add_nbo a.bin c.bin");
 }
@@ -34,7 +34,7 @@ uint32_t add_nbo(char filename[]) {
 
 int main(int argc, char* argv[]) {
     if (argc != 3) {
-        usuage();
+        usage();
         return -1;
     }
     
